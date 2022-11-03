@@ -17,17 +17,25 @@
 </head>
 <body>
     <header>
-        <div class="header-container container">  
+        <div class="header-container container" id="nav-container">  
             <h1>Boostrap</h1>
-            <nav class="navbar fixed-center">
-                <a href="#home"><p>Home</p></a>
-                <a href="#sobre"><p>Sobre</p></a>
-                <a href="#criadores"><p>Criadores</p></a>
+            <nav class="navbar navbar-expand-lg fixed-center">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-links" 
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>        
+                </button>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" style="color: white;" href="#home"><p>Home</p></a>
+                        <a class="nav-item nav-link" style="color: white;" href="#sobre"><p>Sobre</p></a>
+                        <a class="nav-item nav-link" style="color: white;" href="#criadores"><p>Criadores</p></a>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-    <section id="home">
-        <div class="title text-justify">
+    <section class="container-fluid" id="home">
+        <div class="title text-lg-start m-lg-1">
             <h1>Bootstrap:<br>O mais famoso dos frameworks css</h1>
         </div>
         <div class="boostrap-logo">
@@ -35,21 +43,21 @@
         </div>
     </section>
 
-    <section id="sobre">
+    <section class="container-fluid" id="sobre">
         <div class="sobre-img"><img class="img-fluid" src="img/icons-hero.png"></div>
         <div class="column"></div>
-        <div class="description container">
+        <div class="description text-lg-start">
             <p>Bootstrap é um framework web com código-fonte aberto para desenvolvimento de componentes de interface e front-end para sites e aplicações web, usando HTML, CSS e JavaScript, baseado em modelos de design para a tipografia, melhorando a experiência do usuário em um site amigável e responsivo.</p>
         </div>
     </section>
 
     <section id="criadores">
-        <div class="carrosel container">
-            <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carrosel container-fluid">
+            <div id="slider" class="carousel slide" data-bs-ride="carousel">
                 <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                  <li data-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+                  <li data-target="#slider" data-bs-slide-to="0" class="active"></li>
+                  <li data-target="#slider" data-bs-slide-to="1"></li>
+                  <li data-target="#slider" data-bs-slide-to="2"></li>
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active c-item">
@@ -74,11 +82,11 @@
                     </div>
                   </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                   <span class="sr-only">Anterior</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
                   <span class="sr-only">Próximo</span>
                 </a>
